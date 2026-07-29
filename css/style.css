@@ -56,6 +56,34 @@ img {
   margin-inline: auto;
 }
 
+.section__title {
+  text-align: center;
+  /* align-items: center; */
+}
+
+.section__title h2 {
+  font-size: 2.5rem;
+  line-height: calc(30 / 25);
+  font-weight: 700;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.section__title h2::before,
+.section__title h2::after {
+  content: "";
+  background-image: url(../images/paw1.svg);
+  width: 25.49px;
+  height: 25px;
+  aspect-ratio: 25.49 / 25;
+  transform: translateY(2px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* -----------
 header
 ----------- */
@@ -252,10 +280,108 @@ fv
   }
 }
 
-
 /* -----------
 強み
 ----------- */
+.features {
+  padding: 64px 30px 68px;
+  background-color: rgba(13, 150, 160, 0.102);
+}
+@media (max-width: 767px) {
+  .features {
+    padding: 51px 20px 35px;
+  }
+}
+
+.features__contents {
+  margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .features__contents {
+    margin-top: 42px;
+  }
+}
+
+.features__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+@media (max-width: 767px) {
+  .features__items {
+    row-gap: 42px;
+  }
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: calc(45 / 880 * 100%);
+}
+@media (max-width: 767px) {
+  .features__item {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    row-gap: 26px;
+  }
+}
+
+.features__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .features__item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+.features__textarea {
+  flex: 1;
+}
+
+.features__textarea h3 {
+  font-size: 2.2rem;
+  line-height: calc(33 / 22);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .features__textarea h3 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: calc(30 / 20);
+  }
+}
+
+.features__textarea p {
+  margin-top: 19px;
+}
+@media (max-width: 767px) {
+  .features__textarea p {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}
+
+.features__image {
+  width: calc(440 / 880 * 100%);
+}
+@media (max-width: 767px) {
+  .features__image {
+    width: 100%;
+  }
+}
+
+.features__image img {
+  aspect-ratio: 440 / 247;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .features__image img {
+    aspect-ratio: 335 / 200;
+  }
+}
 
 /* -----------
 サービス
