@@ -22,6 +22,7 @@ body {
   font-family: var(--font-noto-jp);
   font-weight: 500;
   color: var(--color-text);
+  background-color: #fff;
   font-size: 1.8rem;
   line-height: calc(33 / 18);
 }
@@ -223,7 +224,6 @@ fv
 ----------- */
 .greeting {
   padding: 60px 20px 60px;
-  background-color: #fff;
   text-align: center;
   position: relative;
 }
@@ -386,6 +386,80 @@ fv
 /* -----------
 サービス
 ----------- */
+.services {
+  padding: 63px 30px 59px;
+}
+@media (max-width: 767px) {
+  .services {
+    padding: 45px 20px 39px;
+  }
+}
+
+.services__items {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .services__items {
+    margin-top: 42px;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 39px;
+  }
+}
+
+.services__item {
+  width: calc(260 / 880 * 100%);
+}
+@media (max-width: 767px) {
+  .services__item {
+    width: 100%;
+  }
+}
+
+.services__image img {
+  aspect-ratio: 260 / 200;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .services__image img {
+    aspect-ratio: 335 / 200;
+  }
+}
+
+.services__textarea {
+  margin-top: 19px;
+}
+@media (max-width: 767px) {
+  .services__textarea {
+    margin-top: 30px;
+  }
+}
+
+.services__textarea h3 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: calc(25 / 20);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .services__textarea h3 {
+    line-height: calc(30 / 20);
+  }
+}
+
+.services__textarea p {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+}
+@media (max-width: 767px) {
+  .services__textarea p {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}
 
 /* -----------
 お知らせ
