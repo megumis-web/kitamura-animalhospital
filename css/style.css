@@ -464,6 +464,50 @@ fv
 /* -----------
 お知らせ
 ----------- */
+.news {
+  padding: 63px 30px 68px;
+  background-color: rgba(13, 150, 160, 0.102);
+}
+
+.news__items {
+  margin-top: 44px;
+}
+
+.news__item:first-of-type {
+  border-top: 1px solid #707070;
+}
+
+.news__item {
+  height: 60px;
+  padding-left: 19px;
+  border-bottom: 1px solid #707070;
+}
+
+.news__item a {
+  height: 60px;
+  display: flex;
+  column-gap: calc(25 / 880 * 100%);
+  align-items: center;
+}
+
+.news__item a time {
+  font-size: 1.7rem;
+  line-height: calc(25 / 17);
+  font-weight: 700;
+}
+
+.news__item a h3 {
+  font-size: 2rem;
+  line-height: calc(25 / 20);
+  font-weight: 700;
+  width: 184px;
+  color: var(--color-main);
+}
+
+.news__item a p {
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+}
 
 /* -----------
 アクセス
