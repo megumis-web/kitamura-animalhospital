@@ -651,6 +651,154 @@ fv
 /* -----------
 お問い合わせ
 ----------- */
+.contact {
+  padding: 63px 30px 80px;
+  background-color: rgba(13, 150, 160, 0.102);
+}
+@media (max-width: 767px) {
+  .contact {
+    padding: 43px 20px 50px;
+  }
+}
+
+.contact__contents {
+  margin-top: 22px;
+}
+@media (max-width: 767px) {
+  .contact__contents {
+    margin-top: 39px;
+  }
+}
+
+.contact__textarea p {
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .contact__textarea p {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    text-align: left;
+  }
+}
+
+.contact__form {
+  margin-top: 39px;
+}
+@media (max-width: 767px) {
+  .contact__form {
+    margin-top: 34px;
+  }
+}
+
+.form__item input {
+  background-color: #fff;
+  width: calc(711 / 880 * 100%);
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .form__item input {
+    height: 50px;
+    width: 100%;
+  }
+}
+
+.form__item textarea {
+  background-color: #fff;
+  width: calc(711 / 880 * 100%);
+  height: 300px;
+}
+@media (max-width: 767px) {
+  .form__item textarea {
+    width: 100%;
+  }
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 29px;
+}
+@media (max-width: 767px) {
+  .form__item {
+    flex-direction: column;
+    /* row-gap: 17px; */
+  }
+}
+
+.form__name {
+  font-size: 2rem;
+  line-height: calc(40 / 20);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .form__name {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+  }
+}
+
+.form__email,
+.form__message {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: calc(40 / 20);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .form__email,
+  .form__message {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+  }
+}
+
+.form__button {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .form__button {
+    margin-top: 50px;
+  }
+}
+
+.form__button input {
+  background-color: var(--color-main);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--color-main);
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: calc(33 / 25);
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.4s, background-color 0.4s;
+}
+@media (any-hover: hover) {
+  .form__button input:hover {
+    color: var(--color-main);
+    background-color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .form__button input {
+    width: 100%;
+    height: 41px;
+    font-size: 2rem;
+    line-height: calc(26 / 20);
+  }
+}
+
+
+
+
+
 
 /* -----------
 footer
