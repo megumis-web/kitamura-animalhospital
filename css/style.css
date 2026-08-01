@@ -272,6 +272,11 @@ fv
 .greeting__contents p span {
   display: inline-block;
 }
+@media (max-width: 767px) {
+  .greeting__contents p span {
+    display: inline;
+  }
+}
 
 .greeting__bg-paw {
   position: absolute;
