@@ -85,6 +85,17 @@ img {
   background-position: center;
 }
 
+.services__title h2 {
+  column-gap: 16px;
+}
+
+.services__title h2::before,
+.services__title h2::after,
+.contact__title h2::before,
+.contact__title h2::after {
+  transform: translateY(3px);
+}
+
 /* -----------
 header
 ----------- */
@@ -395,7 +406,7 @@ fv
 }
 @media (max-width: 767px) {
   .services {
-    padding: 45px 20px 39px;
+    padding: 43px 20px 39px;
   }
 }
 
@@ -474,7 +485,7 @@ fv
 }
 @media (max-width: 767px) {
   .news {
-    padding: 43px 20px 50px;
+    padding: 42px 20px 49px;
   }
 }
 
@@ -514,8 +525,9 @@ fv
 }
 @media (max-width: 767px) {
   .news__item a {
-    padding-block: 28px;
+    padding: 28px 0;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -561,7 +573,7 @@ fv
 }
 @media (max-width: 767px) {
   .access {
-    padding: 43px 20px 50px;
+    padding: 42px 20px 49px;
   }
 }
 
@@ -714,7 +726,7 @@ fv
 }
 @media (max-width: 767px) {
   .contact {
-    padding: 43px 20px 50px;
+    padding: 42px 20px 50px;
   }
 }
 
@@ -758,6 +770,7 @@ fv
 }
 @media (max-width: 767px) {
   .form__item input {
+    margin-top: 2px;
     height: 50px;
     width: 100%;
     flex: auto;
@@ -773,6 +786,7 @@ fv
 }
 @media (max-width: 767px) {
   .form__item textarea {
+    margin-top: 2px;
     width: 100%;
     flex: auto;
   }
@@ -796,7 +810,7 @@ fv
   width: 140px;
 }
 @media (max-width: 767px) {
-  .form__name {
+  .form__name label {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
   }
@@ -822,8 +836,8 @@ fv
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  .form__email,
-  .form__message {
+  .form__email label,
+  .form__message label {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
   }
